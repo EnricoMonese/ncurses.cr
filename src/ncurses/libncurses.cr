@@ -1,4 +1,8 @@
-@[Link("ncursesw")]
+{% if flag?(:apple) %}
+  @[Link("ncurses")]
+{% else %}
+  @[Link("ncursesw")]
+{% end %}
 lib LibNCurses
   type Window = Void*
   type Screen = Void*
