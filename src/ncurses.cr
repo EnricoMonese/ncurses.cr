@@ -37,6 +37,20 @@ module NCurses
     @@stdscr = w
   end
 
+  def prog_mode
+    scr = @@stdscr
+    NCurses.def_prog_mode
+    NCurses.endwin
+    begin
+      yield
+    ensure
+      NCurses.reset_prog_mode
+      @@stdscr = scr
+      NCurses.clear
+      NCurses.refresh
+    end
+  end
+
   macro ncurses_bits(mask, shift)
     ({{mask}} << ({{shift}} + LibNCurses::ATTR_SHIFT))
   end
