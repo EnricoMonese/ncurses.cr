@@ -33,6 +33,10 @@ module NCurses
     scr
   end
 
+  def stdscr=(w : Window | Nil)
+    @@stdscr = w
+  end
+
   macro ncurses_bits(mask, shift)
     ({{mask}} << ({{shift}} + LibNCurses::ATTR_SHIFT))
   end
