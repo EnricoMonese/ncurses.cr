@@ -285,6 +285,9 @@ lib LibNCurses
 
   fun delwin(w : Window)
 
+  fun def_prog_mode() : LibC::Int
+  fun reset_prog_mode() : LibC::Int
+
   # Attribute
   fun wattron(w : Window, attr : LibC::Int) : Result
   fun wattroff(w : Window, attr : LibC::Int) : Result

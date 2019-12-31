@@ -49,7 +49,7 @@ module NCurses
     {% end %}
   end
 
-  defwrapper raw, noraw, echo, noecho, cbreak, nocbreak, start_color, nl, nonl, clear, erase
+  defwrapper raw, noraw, echo, noecho, cbreak, nocbreak, start_color, nl, nonl, clear, erase, def_prog_mode, reset_prog_mode
 
   delegate curs_set, to: stdscr
   delegate keypad, to: stdscr
