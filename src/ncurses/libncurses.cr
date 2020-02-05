@@ -235,6 +235,7 @@ lib LibNCurses
   fun nl : Result
   fun nonl : Result
   fun clear : Result
+  fun clrtoeol : Result
   fun erase : Result
 
   # Color
