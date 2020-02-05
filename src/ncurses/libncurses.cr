@@ -237,6 +237,7 @@ lib LibNCurses
   fun clear : Result
   fun clrtoeol : Result
   fun erase : Result
+  fun scrollok(w : Window, bf : Bool) : LibC::Int
 
   # Color
   fun start_color : Result
