@@ -175,5 +175,9 @@ module NCurses
     def mouseinterval(interval : Int32)
       check_error(LibNCurses.mouseinterval(interval), "mouseinterval")
     end
+
+    def clrtoeol
+      LibNCurses.clrtoeol
+    end
   end
 end
