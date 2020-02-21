@@ -97,6 +97,14 @@ lib LibNCurses
     MAGENTA = 5
     CYAN    = 6
     WHITE   = 7
+    BLACK_BRIGHT = 8
+    RED_BRIGHT = 9
+    GREEN_BRIGHT = 10
+    YELLOW_BRIGHT = 11
+    BLUE_BRIGHT = 12
+    MAGENTA_BRIGHT = 13
+    CYAN_BRIGHT = 14
+    WHITE_BRIGHT = 15
   end
 
   enum Result : LibC::Int
