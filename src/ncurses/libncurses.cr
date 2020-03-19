@@ -88,7 +88,8 @@ lib LibNCurses
     ALL_MOUSE_EVENTS      = REPORT_MOUSE_POSITION - 1_u32
   end
 
-  enum Color : Chtype
+  enum Color : Int32
+    DEFAULT = -1
     BLACK   = 0
     RED     = 1
     GREEN   = 2
